@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/aliceblue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:layout_gravity="bottom"
+        android:id="@+id/radio_group_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#E3E2E1"
+        >
+
+        <RadioButton
+            android:id="@+id/rbtn_takeout"
+            style="@style/MyRadioButtonStyle"
+            android:text="@string/title_takeout"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:checked="true"
+            android:textColor="@color/radiobtn_color"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtn_indent"
+            style="@style/MyRadioButtonStyle"
+            android:textSize="15sp"
+            android:text="@string/title_indent"
+            android:drawableTop="@drawable/ic_dashboard_black_24dp"
+            android:textColor="@color/radiobtn_color"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbtn_user"
+            style="@style/MyRadioButtonStyle"
+            android:textSize="15sp"
+            android:drawableTop="@drawable/ic_notifications_black_24dp"
+            android:text="@string/title_user"
+            android:textColor="@color/radiobtn_color"></RadioButton>
+
+    </RadioGroup>
+
+
+</LinearLayout>

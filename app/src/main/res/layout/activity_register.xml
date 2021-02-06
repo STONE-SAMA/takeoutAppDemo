@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+
+        <EditText
+            android:id="@+id/et_register_id"
+            android:hint="@string/hint_user_id"
+            android:textSize="25sp"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:hint="@string/hint_user_password"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+
+        <EditText
+            android:id="@+id/et_register_password_again"
+            android:hint="@string/hint_user_password_again"
+            android:textSize="25sp"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_verify"
+            android:hint="@string/hint_verify"
+            android:textSize="25sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <ImageView
+            android:id="@+id/iv_verify_image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"></ImageView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:textSize="30sp"
+        android:text="@string/btn_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"></Button>
+
+    <TextView
+        android:id="@+id/tv_agreement"
+        android:textSize="15dp"
+        android:textColor="#FF7F00"
+        android:text="查看《用户协议》"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"></TextView>
+
+
+</LinearLayout>

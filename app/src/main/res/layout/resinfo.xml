@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ImageView
+        android:id="@+id/iv_shop"
+        android:adjustViewBounds="true"
+        android:layout_width="150dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="店名"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/iv_shop"
+        />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:src="@drawable/star"
+        android:adjustViewBounds="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/iv_shop"
+        android:layout_below="@id/tv_shopname"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="#FF5722"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_shopname"
+        android:layout_toRightOf="@+id/iv_star"
+        android:text="等级"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="月销量："
+        android:textSize="15sp"
+        android:layout_toLeftOf="@+id/tv_sellnum"
+        android:layout_below="@+id/tv_shopname"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_sellnum"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_shopname"
+        android:gravity="center"
+        android:text="月销量"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_below="@id/tv_level"
+        android:layout_toRightOf="@id/iv_shop"
+        android:gravity="center"
+        android:text="类型"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="类型"
+        android:layout_below="@+id/tv_level"
+        android:layout_toRightOf="@+id/tv_type"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_below="@id/tv_type"
+        android:layout_toRightOf="@id/iv_shop"
+        android:gravity="center"
+        android:text="地址"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tv_info"
+        android:layout_toRightOf="@+id/tv_address"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="地址" />
+
+    <TextView
+        android:id="@+id/tv_res_info_ID"
+        android:layout_below="@id/tv_sellnum"
+        android:layout_toRightOf="@id/tv_info"
+        android:layout_marginLeft="50dp"
+        android:text="商家账号"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+</RelativeLayout>

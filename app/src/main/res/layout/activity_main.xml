@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFE7F2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:text="馋了么"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_upload"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+
+        <EditText
+            android:id="@+id/et_login_id"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/hint_user_id"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:src="@android:drawable/ic_lock_lock"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></ImageView>
+
+        <EditText
+            android:background="@android:drawable/edit_text"
+            android:id="@+id/et_login_password"
+            android:hint="@string/hint_user_password"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:text="@string/tv_forget"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:background="#6CFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_Login"
+            android:textSize="30sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_register"
+            android:text="@string/tv_Register"
+            android:textColor="#007FFF"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_restaurant_login"
+            android:text="商家登录"
+            android:textSize="20sp"
+            android:background="#6CFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Button>
+        
+        <Button
+            android:id="@+id/btn_restaurant_register"
+            android:text="商家注册"
+            android:textSize="20sp"
+            android:background="#6CFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

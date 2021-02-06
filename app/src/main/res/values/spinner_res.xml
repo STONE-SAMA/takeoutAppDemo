@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="res_type_spinner">
+        <item>请选择类型</item>
+        <item>中餐</item>
+        <item>西餐</item>
+        <item>料理</item>
+        <item>小吃</item>
+        <item>饮品</item>
+        <item>水果</item>
+        <item>其他</item>
+    </string-array>
+</resources>
